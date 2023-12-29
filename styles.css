@@ -1,0 +1,36 @@
+.head img{
+    width: 150px;
+    height: 150px;
+}
+.head{
+    display: flex;
+    background-color: rgb(212, 231, 248);
+    justify-content: left;
+    place-items: center;
+
+}
+h1{
+    font-size: 50px;
+}
+.menu{
+    display: block;
+    list-style-type: none;
+    gap: 20px;
+    background-color: rgb(224, 224, 126);
+    padding: 40px 20px;
+}
+li{
+    float: left;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+
+}
+.Search{
+    float: right;
+    
+  
+
+}
