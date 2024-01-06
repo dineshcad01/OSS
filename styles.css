@@ -7,6 +7,7 @@
     background-color: rgb(212, 231, 248);
     justify-content: left;
     place-items: center;
+    font-family: monospace ;
 
 }
 h1{
@@ -41,5 +42,9 @@ body{
 }
 .Gwear{
     gap: 500px;
-
+    padding: 180px 180px;
+    background-color: rgb(224, 238, 232);
+}
+a:hover{
+    background-color: rgb(219, 39, 7);
 }
