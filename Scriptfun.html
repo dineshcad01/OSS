@@ -6,17 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to Javascript</h1>
-<input type="text" id="A1" name="A1" value=""><br>
-<input type="text" id="A2" name="A2" value=""><br>
-<input type="submit" value="Addition" onclick="Scriptfun('+')">
-<input type="submit" value="Subtraction" onclick="Scriptfun('-')">
-<input type="submit" value="Mutiplication" onclick="Scriptfun('*')">
-<input type="submit" value="Division" onclick="Scriptfun('/')">
-
-<p id="result">For Output</p>
-
-
+  
 <label for="Fname">Fname </label><br>
 <input type="text" name="name" id="name" value="">
 <br>
@@ -98,38 +88,8 @@
    document.getElementById("address").innerHTML= Address;
    
   }
-
-
-  function Scriptfun(a){
-    var value1=document.getElementById("A1").value;
-    var value2=document.getElementById("A2").value;
-    value1=Number(value1);
-    value2=Number(value2);
-
- 
-    switch(a){
-      case '+':
-       document.getElementById("result").innerHTML= "Added value of " 
-       + value1 + " and " + value2 + " is " + (value1 + value2);
-        break;
-      case '-':
-       document.getElementById("result").innerHTML= "Subtracted value of " 
-       + value1 + " and " + value2 + " is " + (value1 - value2);
-       break;
-      case '*':
-       document.getElementById("result").innerHTML=  "Mutiplication value of " 
-       + value1 + " and " + value2 + " is " + (value1 * value2);
-       break;
-     case '/':
-       document.getElementById("result").innerHTML=  "Division value of " 
-       + value1 + " and " + value2 + " is " + (value1 / value2);
-       break;
-    }
-
  
  
- 
-  }
 </script>
 </body>
 </html>
