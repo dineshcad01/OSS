@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Javascript</h1>
+<input type="text" id="A1" name="A1" value=""><br>
+<input type="text" id="A2" name="A2" value=""><br>
+<input type="submit" value="Addition" onclick="Scriptfun('+')">
+<input type="submit" value="Subtraction" onclick="Scriptfun('-')">
+<input type="submit" value="Mutiplication" onclick="Scriptfun('*')">
+<input type="submit" value="Division" onclick="Scriptfun('/')">
+
+<p id="result">For Output</p>
+
+
+<label for="Fname">Fname </label><br>
+<input type="text" name="name" id="name" value="">
+<br>
+<label for="DOB">DOB </label><br>
+<input type="date" name="DOB" id="DOB" value="">
+<br>
+<label for="username">Username </label><br>
+<input type="text" name="username" id="user" value=""><br>
+<label for="Email">Email</label><br>
+<input type="email" name="email" id="email" value=""><br>
+<label for="Password">Password </label><br>
+<input type="password" name="password" id="password" value=""><br>
+<label for="PH">Contactnumber </label><br>
+<input type="number" name="PH" id="PH" value=""><br>
+<label for="address">Address </label><br>
+<textarea name="Address" id="address" ></textarea><br>
+<input type="submit" value="Register" onclick= "Submit()">
+
+
+
+<br><br><br>
+
+<table border="1px">
+<tr>
+  <td>Fname</td>
+  <td id="Tname" ></td>
+  </tr>
+  <tr>
+    <td>DOB</td>
+    <td id="TDOB" ></td>
+    </tr>
+    <tr>
+      <td>username</td>
+      <td id="Tuser" ></td>
+      </tr> 
+
+      <tr>
+        <td>Email</td>
+        <td id="Temail" ></td>
+        </tr>  
+        <tr>
+
+          <td>Password</td>
+          <td id="Tpassword"></td>
+          </tr> 
+
+          <tr>
+            <td>Contactnumber</td>
+            <td id="TPH" ></td>
+            </tr> 
+        <tr>
+          <td>Address</td>
+          <td id="Taddress"></td> 
+        </tr>           
+
+</table>
+
+<script>
+  function Submit(){
+   var Fname=document.getElementById("name").value;
+   document.getElementById("Tname").innerHTML= Fname;
+
+   var DOB=document.getElementById("DOB").value;
+   document.getElementById("TDOB").innerHTML= DOB;
+   
+   var Username=document.getElementById("user").value;
+   document.getElementById("Tuser").innerHTML=username;
+   
+   var Email =document.getElementById("email").value;
+   document.getElementById("Temail").innerHTML= Email;
+   
+   var Password =document.getElementById("Password").value;
+   document.getElementById("TPassword").innerHTML= Password;
+   
+   var Contactnumber =document.getElementById("PH").value;
+   document.getElementById("TPH").innerHTML= Contactnumber;
+   
+   var Address =document.getElementById("address").value;
+   document.getElementById("address").innerHTML= Address;
+   
+  }
+
+
+  function Scriptfun(a){
+    var value1=document.getElementById("A1").value;
+    var value2=document.getElementById("A2").value;
+    value1=Number(value1);
+    value2=Number(value2);
+
+ 
+    switch(a){
+      case '+':
+       document.getElementById("result").innerHTML= "Added value of " 
+       + value1 + " and " + value2 + " is " + (value1 + value2);
+        break;
+      case '-':
+       document.getElementById("result").innerHTML= "Subtracted value of " 
+       + value1 + " and " + value2 + " is " + (value1 - value2);
+       break;
+      case '*':
+       document.getElementById("result").innerHTML=  "Mutiplication value of " 
+       + value1 + " and " + value2 + " is " + (value1 * value2);
+       break;
+     case '/':
+       document.getElementById("result").innerHTML=  "Division value of " 
+       + value1 + " and " + value2 + " is " + (value1 / value2);
+       break;
+    }
+
+ 
+ 
+ 
+  }
+</script>
+</body>
+</html>
+
+
+ 
