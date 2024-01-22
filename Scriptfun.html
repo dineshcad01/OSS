@@ -88,7 +88,130 @@
    document.getElementById("address").innerHTML= Address;
    
   }
-  
+  function GetResultFun(){
+    var text="Welcome to welcome javascript program organized by bright skills and bright skills welcomes you once again"
+
+     console.log(text.length);
+     console.log(text.indexOf("welcome"));
+     console.log(text.indexOf("welcome", 12));
+     console.log(text.lastIndexOf("welcome"));
+     console.log(text.search("welcome"));
+     let arr=text.search(/welcome/);
+     console.log(arr);
+     let arr1=text.match(/welcome/);
+     console.log(arr1);
+     let arr11=text.match(/welcome/gi);
+     console.log(arr11);
+
+     console.log(text.slice(19,29));
+
+     let today=new Date();
+     console.log(today);
+
+     console.log(today.toDateString());
+     console.log(today.toLocaleDateString());
+     console.log(today.toISOString());
+     console.log(today.toLocaleString());
+     console.log(today.toString());
+     console.log(today.toTimeString());
+     console.log(today.toUTCString());
+     console.log(today.getFullYear());
+     console.log(today.getDate());
+     console.log(today.getDay());
+     console.log(today.getHours());
+     console.log(today.getMinutes());
+     console.log(today.getSeconds());
+     console.log(today.getTime());
+     console.log(today.getTimezoneOffset());
+     
+     
+     var month=["jan", "Feb", "mar", "apr"]
+     console.log(month[today.getMonth()]);
+
+     let dob=new Date("1999-11-08");
+     console.log(dob);
+
+     let age=today.getFullYear()-dob.getFullYear();
+     console.log(age);
+
+     console.log(today.getMilliseconds());
+     console.log(today.toJSON());
+
+     var listofnames=["Dinesh", "nancy", "Anand"]
+     console.log("listofnames...",listofnames.length);
+     console.log(listofnames[0]);
+     console.log(listofnames);
+
+     for(let a=0;a<listofnames.length;a++)
+     console.log(listofnames[a]);
+
+     var namelist=["Dinesh", "Nancy", "Anand", "Akshu", "Surya"];
+
+     console.log(namelist);
+     console.table(namelist);
+     console.table(namelist[0]);
+     console.table(namelist[1]);
+     console.table(namelist[2]);
+
+
+     for (var a=0; a<namelist.length; a++)
+    {
+      console.log(namelist[a]);
+    } 
+    console.clear();
+
+    var result=namelist.forEach(function(name1){
+
+      console.log(name1);
+    })
+
+    console.log("arrow output");
+    console.clear();
+
+    var result=namelist.forEach(name1=>console.log(name1));
+
+    var namelist=["Dinesh", "Nancy", "Anand", "Akshu", "Surya"];
+
+    var define1="m";
+
+    var result=namelist.filter(name1=>name1.startsWith ("D") || name1.endsWith("d") || name1.startsWith(define1));
+    console.log(result);
+
+    var listofnumbers=[1,2,3,4,5,6];
+    var result=listofnumbers.map(number=>number+2);
+    console.log(result);
+
+    var result=listofnumbers.reduce((sum,number)=>sum*2);
+    console.log(result);
+
+    console.log(Math.PI);
+    console.log(Math.E);
+    console.log(2*Math.PI*2);
+    
+    var a=4.4;
+    console.log(Math.round(4.4));
+    console.log(Math.floor(4.5));
+    console.log(Math.ceil(4.4));
+    console.log(Math.sqrt(64));
+    console.log(Math.pow(2,5));
+    console.log(Math.floor(Math.random()*100+1000));
+    console.log(Math.abs(-4.75));
+    console.log(Math.floor(-5.25));
+    console.log(Math.min(20,25,35,25));
+    console.log(Math.max(20,25,35,25));
+    
+
+
+
+
+
+
+
+
+
+
+  } 
+  GetResultFun();
   
          
 </script>
