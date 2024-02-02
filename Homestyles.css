@@ -1,5 +1,5 @@
 h1{
-	background-color: silver;
+	background-color: antiquewhite;
 	font-size: 50px;
 
 }
@@ -10,7 +10,7 @@ ul{
 	list-style-type: none;
 	gap:20px;
 	padding: 30px 20px;
-	background-color: aqua;
+	background-color: antiquewhite;
 
 }
 li{
@@ -24,7 +24,46 @@ li a{
 
 }
 body{
-	background-color: olive;
+	background-color: rgb(247, 247, 247) ;
 	
 
+}
+
+.swiper-pargination-bullet-active{
+	background-color: aqua;
+
+}
+
+swipwer .swipwer-button-prev, .swiper .swiper-button-next{
+	color:#fff;
+
+  }
+
+
+.swiper {
+  width: 800px;
+  height: 400px;
+}
+.swiper img{
+  width: 800px;
+  height: 400px;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
