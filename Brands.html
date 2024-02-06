@@ -21,14 +21,61 @@
 
     <ul>
         <div class="menu">
-    <li><a href="Home.htm">Home</a></li>
+    <li><a href="Dinesh2911.html">Home</a></li>
     <li><a href="menu.html">Menu</Menu></a></li>
     <li><a href="Brands.html">Brands</a></li>
     <li><a href="About.html">About us</a></li>
     <li><a href="Contact.html">Contact us</a></li>
     <li><a href="Login.html">Log in</a></li>
-      
+      </div>
+      </ul>
+
+      <div class="container">   
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/adidas.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/Fila.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/puma.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/reebok.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/skechers.jpg" alt=""></div>
+                    </div>
     
-            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>   
+    
+   <script>
+
+$(document).ready(function() {
+// Swiper: Slider
+    new Swiper('.swiper-container', {
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1028: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+});
+
+   </script>
 </body>
 </html>
