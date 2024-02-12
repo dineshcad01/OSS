@@ -132,5 +132,8 @@ body {
       .dropdown:hover .dropdown-content {
         display: block;
       }  
-      
+      .form{
+        display: flex;
+        justify-content: space-between;
+      }
       
